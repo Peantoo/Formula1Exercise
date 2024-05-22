@@ -59,8 +59,9 @@ While LSTM (Long Short-Term Memory) models are powerful for capturing long-term 
 ## Strengths of LSTM:
 Capturing Long-Term Dependencies: LSTMs excel at capturing complex patterns over long sequences.
 Flexibility: LSTMs can handle a variety of time-series problems, including those with non-linear dependencies.
-Why ARIMA Was Better for This Task:
+## Why ARIMA Was Better for This Task:
 Temporal Nature: The task was to predict the next 5 laps, not other variables, making ARIMA's short-term forecasting ability ideal.
+
 Data Constraints: Limited historical data from a single race event favored ARIMA over LSTM.
 Ease of Implementation: ARIMA was easier to implement and tune for quick predictions.
 
@@ -71,7 +72,7 @@ An ARIMA model was trained on the adjusted lap times.
 The model's performance was validated using a portion of the data reserved for testing.
 Metrics such as Mean Squared Error (MSE) were used to evaluate the model's accuracy.
 The model's predictions were visualized using line charts to compare actual vs. predicted lap times.
-#Handling Pit Stops
+## Handling Pit Stops
 Pit stops were accounted for by removing their duration from the lap times, ensuring that the model's predictions reflected the driver's actual performance on the track.
 
 ## Visualization
@@ -89,6 +90,9 @@ Created a user-friendly Streamlit application to interactively select races and 
 
 ## Areas for Improvement
 Extended Data: Incorporating data from more races and drivers to enhance model training and validation.
+
 Feature Engineering: Exploring additional features such as weather conditions, tire types, and track characteristics. There are probably lots of features that could be used with a multiclass regression model to provide more accurate predictions, but that is out of the scope of this project.
+
 Advanced Models: Experimenting with more complex models like LSTMs for long-term forecasting tasks.
+
 Notes: I really wanted to attempt to train one large model and then apply it to each driver. I also thought of training a model for each race. I also investigated using Transformers to predict the next sequence of numbers, since essentially that's what the attention mechanism in transformers is for. It pays attention to what comes before and after and is able to predict what should come next in a sequence. If I had more time and perhaps a budget, that's an area I'd like to look into, but I think what I developed works for now.
