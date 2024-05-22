@@ -16,6 +16,20 @@ Fun prediction exercise
     ```bash
    streamlit run src/formula1streamlit.py
 
+4. In the App
+
+   Select a Race.
+   Select a Driver.
+   Click "Train Model."
+   Inspect the graph to ensure the model is in line with the truth data.
+   Enter the number of laps you would like to predict out from. I start with 15. The max is currently 20 (arbitrary for demo purposes). Less than 5 will generally not give a good prediction, but will work.
+   Click "Populate Laps."
+   If desired, adjust any value. Values are in milliseconds (100000 = 100 seconds).
+   If desired, enter a lap that contains a pit stop (can be automated in the future). Enter the time the pit stop took.
+   Click Predict.
+   View next 5 predicted laps and graph. Enjoy.
+   
+
 # Formula 1 Lap Time Prediction Project
 Project Overview
 This project aims to predict the next 5 lap times for a selected driver in a specific race event using time-series forecasting. The goal is to build a model that can provide accurate predictions based on the driver's previous lap times, accounting for the effects of pit stops.
@@ -78,6 +92,10 @@ Pit stops were accounted for by removing their duration from the lap times, ensu
 ## Visualization
 Line charts were used to visualize the actual and predicted lap times.
 The graph displayed a single continuous line, with actual values in blue and predicted values in orange, ensuring clarity and continuity.
+# Notes on Streamlit!
+## Bugs
+The app allows for the manual entry of data, but often when you click a cell, it doesn't take the first time. This is known and fixable, I just don't have time. Usually you can just click it and enter a value twice and it should work.
+
 ## Future Validation
 To further validate the model's performance, it can be applied to another race event and driver. This would test the model's generalizability and robustness across different race conditions and driver performances.
 
