@@ -18,16 +18,16 @@ Fun prediction exercise
 
 4. In the App
 
-   Select a Race.
-   Select a Driver.
-   Click "Train Model."
-   Inspect the graph to ensure the model is in line with the truth data.
-   Enter the number of laps you would like to predict out from. I start with 15. The max is currently 20 (arbitrary for demo purposes). Less than 5 will generally not give a good prediction, but will work.
-   Click "Populate Laps."
-   If desired, adjust any value. Values are in milliseconds (100000 = 100 seconds).
-   If desired, enter a lap that contains a pit stop (can be automated in the future). Enter the time the pit stop took.
-   Click Predict.
-   View next 5 predicted laps and graph. Enjoy.
+   - Select a Race.
+   - Select a Driver.
+   - Click "Train Model."
+   - Inspect the graph to ensure the model is in line with the truth data.
+   - Enter the number of laps you would like to predict out from. I start with 15. The max is currently 20 (arbitrary for demo purposes). Less than 5 will generally not give a good prediction, but will work.
+   - Click "Populate Laps."
+   - If desired, adjust any value. Values are in milliseconds (100000 = 100 seconds).
+   - If desired, enter a lap that contains a pit stop (can be automated in the future). Enter the time the pit stop took.
+   - Click Predict.
+   - View next 5 predicted laps and graph. Enjoy.
    
 
 # Formula 1 Lap Time Prediction Project
