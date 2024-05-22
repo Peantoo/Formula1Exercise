@@ -1,6 +1,19 @@
 # Formula1Exercise
 Fun prediction exercise
 
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/formula1-prediction.git
+   cd formula1-prediction
+
+2. Install required dependencies
+   pip install -r requirements.txt
+   
+3. Run the Streamlit Application
+    streamlit run src/formula1streamlit.py
+
 # Formula 1 Lap Time Prediction Project
 Project Overview
 This project aims to predict the next 5 lap times for a selected driver in a specific race event using time-series forecasting. The goal is to build a model that can provide accurate predictions based on the driver's previous lap times, accounting for the effects of pit stops.
