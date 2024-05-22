@@ -9,10 +9,10 @@ Fun prediction exercise
    cd formula1-prediction
 
 2. Install required dependencies
-   pip install -r requirements.txt
+   ```pip install -r requirements.txt
    
 3. Run the Streamlit Application
-    streamlit run src/formula1streamlit.py
+    ```streamlit run src/formula1streamlit.py
 
 # Formula 1 Lap Time Prediction Project
 Project Overview
