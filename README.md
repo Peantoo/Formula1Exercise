@@ -11,6 +11,8 @@ Fun prediction exercise
 2. Install required dependencies
    ```bash
    pip install -r requirements.txt
+
+2a. Adjust the directories of the datasets in the formula1streamlit.py file to match wherever you cloned the repo to. I forgot to write this in and don't have time to do it.
    
 3. Run the Streamlit Application
     ```bash
