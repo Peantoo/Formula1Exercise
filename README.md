@@ -25,7 +25,7 @@ Fun prediction exercise
    - Click "Train Model."
    - Inspect the graph to ensure the model is in line with the truth data.
    - Enter the number of laps you would like to predict out from. I start with 15. The max is currently 20 (arbitrary for demo purposes). Less than 5 will generally not give a good prediction, but will work.
-   - Click "Populate Laps."
+   - Click "Populate Laps." This will generate random lap times between the minimum and maximum actual lap times in order to simulate a new race using the same driver and race. 
    - If desired, adjust any value. Values are in milliseconds (100000 = 100 seconds).
    - If desired, enter a lap that contains a pit stop (can be automated in the future). Enter the time the pit stop took.
    - Click Predict.
