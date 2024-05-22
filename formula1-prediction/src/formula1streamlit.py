@@ -10,9 +10,9 @@ import warnings
 # Function to read CSV files
 @st.cache_data
 def load_data():
-    lap_times = pd.read_csv('lap_times.csv')
-    pit_stops = pd.read_csv('pit_stops.csv')
-    races = pd.read_csv('races.csv')
+    lap_times = pd.read_csv('formula1-prediction/data/lap_times.csv')
+    pit_stops = pd.read_csv('formula1-prediction/data/pit_stops.csv')
+    races = pd.read_csv('formula1-prediction/data/races.csv')
     return lap_times, pit_stops, races
 
 # Load data
